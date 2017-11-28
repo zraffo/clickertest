@@ -67,5 +67,11 @@ function buyFlashlight() {
 	document.getElementById('flashlight-cost').innerHTML= nextCost;
 };
 
+function flashPop() {
+	var nextCost = Math.floor(5 * Math.pow(1.5, flashlights));
+	document.getElementById('flashlight-quantity').innerHTML= flashlights;
+	document.getElementById('flashlight-cost').innerHTML= nextCost;
+};
+
 window.setInterval(function(){
 }, 1000);

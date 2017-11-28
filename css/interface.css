@@ -72,3 +72,17 @@ span{
 #flashlight{
 	text-align: center;
 }
+/* Popover */
+.popover{
+	border: 2px solid black;
+}
+
+.popover-title{
+	background-color: #000000;
+	font-size: 18px;
+	text-align: center;
+}
+
+.popover-content{
+	padding: 25px;
+}
