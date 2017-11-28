@@ -27,8 +27,9 @@
 }
 
 #lootps{
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
+	font-style: italic;
 }
 
 .progress.active .progress-bar {
@@ -44,3 +45,12 @@
     height: 38px;
 }
 
+#total-loot{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#loot-stats-container{
+	padding-top: 10px;
+	height: 38px;
+}

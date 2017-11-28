@@ -1,4 +1,6 @@
 var progress = 0;
+var loot = 0;
+var lootps = 0;
 
 /*function startProgress() 
 {
@@ -15,6 +17,7 @@ $('.progress-bar').animate({
     width: "100%"
 	}, 2500, function() {
 	$('#loot-progress-bar').replaceWith('<button id="loot-button" role="button" class="btn btn-primary btn-block" onclick="startProgress();"><span class="title" style="padding-left: 10px; padding-right: 10px;">Loot</span></button>');
+	$('#total-loot').html(++lootps);
 	});
 };
 
