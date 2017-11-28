@@ -1,0 +1,46 @@
+#wrapper{
+	height: 100vh;
+	background-color: #EFF6;
+	display: block;
+}
+
+#innerWrapper{
+	padding: 0.5%;
+	height: 100%;
+}
+
+#topRow{
+	height: 25vw;
+	margin-bottom: 10px;
+	outline: black 1px solid;
+}
+
+#resourceCol{
+	padding-right: 15px;
+	margin-left: 15px;
+	width: calc(33.3333333% - 15px);
+}
+
+#loot-box{
+	text-align: center;
+	margin: 15px;
+}
+
+#lootps{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.progress.active .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+#loot-progress{
+    width: 0%;
+    height: 38px;
+}
+#loot-progress-bar{
+    height: 38px;
+}
+
