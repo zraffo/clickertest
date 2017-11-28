@@ -25,11 +25,11 @@ $('.progress-bar').animate({
 
 function lootClick(number) {
 	if(number > 0){
-		loot = loot + number;
 		$('#loot-button').replaceWith('<div id="loot-progress-bar" class="progress"><div id="loot-progress" role="progressbar" class="progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span class="title" style="font-size: 16px;">Looting...</span></div></div>');
 			$('.progress-bar').animate({
     			width: "100%"
 			}, lootspeed, function() {
+		loot = loot + number;
 		$('#loot-progress-bar').replaceWith('<button id="loot-button" role="button" class="btn btn-primary btn-block" onclick="lootClick(1);"><span class="title" style="padding-left: 10px; padding-right: 10px; font-size: 16px;">Loot</span></button>');
 		$('#total-loot').html(loot);
 		});
@@ -54,16 +54,17 @@ $('#loot-progress-bar').replaceWith('<button id="loot-button" role="button" clas
 };*/
 
 function buyFlashlight() {
-	var flashlightCost = Math.floor(5 * Math.pow(1, flashlights));
+	var flashlightCost = Math.floor(5 * Math.pow(1.5, flashlights));
 	if (loot >= flashlightCost){
 		flashlights = flashlights + 1;
 		loot = loot - flashlightCost;
 		lootspeed = Math.floor(.95 * lootspeed);
 		document.getElementById('total-loot').innerHTML = loot;
 		document.getElementById('lootps').innerHTML= lootspeed / 1000;
+		document.getElementById('flashlight-quantity').innerHTML= flashlights;
 	};
-	var nextCost = Math.floor(5 * Math.pow(1, flashlights));
-	document.getElementById('')
+	var nextCost = Math.floor(5 * Math.pow(1.5, flashlights));
+	document.getElementById('flashlight-cost').innerHTML= nextCost;
 };
 
 window.setInterval(function(){
