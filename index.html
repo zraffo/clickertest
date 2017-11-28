@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+	<title>Loot Clicker</title>
+	<link rel="stylesheet" type="text/css" href="css/interface.css">
+	<!-- CDN Bootstrap CSS --> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+	<div id="wrapper" class="wrapperUnbroken">
+		<div id="innerWrapper">
+			<div  id="topRow" class="row">
+				<div id="resourceCol" class="col-xs-4">
+					<div id="loot-box" class="col-xs-12">
+						<button id="loot-button" role="button" class="btn btn-primary btn-block" onclick="startProgress();">
+							<span class="title" style="padding-left: 10px; padding-right: 10px;">Loot</span>
+						</button>
+						<!-- <div id="loot-progress-bar" class="progress">
+							<div id="loot-progress" role="progressbar" class="progress-bar progress-bar-striped active" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+								<span class="title" style="font-size: 16px;">Looting</span>
+							</div>	
+						</div> -->
+						<span id="lootps">0/sec</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="main.js"></script>
+	<!-- CDN jQuery 3.2.1 -->
+	<script
+  	src="https://code.jquery.com/jquery-3.2.1.js"
+  	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  	crossorigin="anonymous"></script>
+	<!-- CDN Bootstrap Popper.js 1.12.3 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<!-- CDN Bootstrap JS 4.0.0 b2 -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
