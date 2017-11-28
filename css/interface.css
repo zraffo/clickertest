@@ -15,11 +15,18 @@
 	outline: black 1px solid;
 }
 
-#resourceCol{
+#resource-col{
 	padding-right: 15px;
 	margin-left: 15px;
 	width: calc(33.3333333% - 15px);
 }
+
+#shop-wrapper{
+	padding-right: 15px;
+	margin-left: 15px;
+	width: calc(66.666666% - 15px);
+}
+
 
 #loot-box{
 	text-align: center;
@@ -52,4 +59,16 @@
 #loot-stats-container{
 	padding-top: 10px;
 	height: 38px;
+}
+#shop-container{
+	height: 100vh;
+}
+#shop-top{
+	padding: 15px;
+}
+span{
+	font-size: 12px;
+}
+#flashlight{
+	text-align: center;
 }
