@@ -70,9 +70,11 @@ span{
 	font-size: 12px;
 }
 #flashlight{
+	visibility: hidden;
 	text-align: center;
 }
 #friendo{
+	visibility: hidden;
 	text-align: center;
 }
 /* Popover */
